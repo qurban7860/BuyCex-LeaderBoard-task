@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboards</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="flex flex-col items-center self-stretch px-16 pt-3.5 max-md:px-5">
+    <div class="flex flex-col pb-10 w-full max-w-[1201px] max-md:max-w-full">
+      <div
+        class="flex gap-0 justify-between pt-2.5 text-lg font-semibold leading-7 max-md:flex-wrap">
+      <div style="flex-direction: column; white-space: nowrap; color: #27272a; padding: 16px; border-radius: 0.5rem; background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex;">
+        <div style="font-size: 1.5rem; font-weight: bold; text-align: center;">Leaderboards</div>
+        <div style="margin-top: 10px; height: 2px; background-color: #f59e0b; border-radius: 9999px;"></div>
+      </div> 
+
+      <div class="self-start text-gray-400 px-4 py-2 text-lg font-semibold bg-gray-100 rounded-lg shadow-md max-md:max-w-full max-md:text-base max-md:px-2 max-md:py-1 hover:bg-yellow-300 hidden md:block">
+        All Rankings
+      </div>             
+      
+      </div>
+      <div class="mt-7 text-3xl font-semibold text-neutral-900 max-md:max-w-full">
+        Top Trader by PnL
+      </div>
+      <div class="mt-4 text-base leading-6 text-gray-400 max-md:max-w-full">
+        Time-based editions of top 50 traders with the highest PnL
+      </div>
+      
+      <div class="flex gap-4 pr-20 mt-10 text-sm font-medium leading-5 text-gray-400 whitespace-nowrap max-md:flex-wrap max-md:pr-5">
+        <div class="justify-center px-2 py-1.5 rounded-md" style="color: #F59E0B; background-color: rgba(245, 158, 11, 0.2);">
+          Weekly
+        </div>
+        <div class="justify-center px-2 py-1.5 rounded-md bg-black text-white">
+          Monthly
+        </div>
+        <div class="justify-center px-2 py-1.5 rounded-md bg-black text-white">
+          Yearly
+        </div>
+      </div>     
+
+  <div
+  class="flex flex-col items-center px-12 pt-3 pb-16 mt-8 max-md:px-5 max-md:max-w-full hidden md:block">
+  <div
+    class="flex overflow-hidden relative flex-col self-start max-w-full rounded-2xl min-h-[563px] w-[1023px]">
+    <img
+    loading="lazy"
+    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/509db23cb1f0834dd1f94c8ec5c87dddcd34e5e7ea9ca21a06430f5de1ef8241?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="object-cover absolute inset-0 size-full"
+  />
+  <div
+    class="flex relative justify-center items-center px-16 py-10 w-full max-md:px-5 max-md:max-w-full">
+    <div class="flex flex-col max-w-full w-[392px]">
+      <div class="self-center text-4xl font-semibold leading-10 text-amber-500" style="color: #F59E0B;">
+        Weekly Edition
+      </div>
+      <div class="flex gap-2 justify-between mt-3 text-white">
+        <div class="text-xs leading-5">
+          2024-05-13 00:00(UTC) to 2024-05-19 00:00(UTC)
+        </div>
+        <div class="flex gap-0.5 text-sm font-medium leading-5">
+          <div>Past editions</div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/313ea80cbd2f2e4b54dd92bd2a725566fb30085c7f52f818d3f1e0b5bef99a6d?apiKey=5fbe414027e446adac42c844fec3b743&"
+            class="shrink-0 my-auto w-4 aspect-square"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="relative px-12 pb-4 w-full max-md:px-5 max-md:max-w-full">
+    <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+      <div class="flex flex-col w-[30%] max-md:ml-0 max-md:w-full">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/be6a5988a853ef2843e67bfb82a3c5eaafd765c11c2e48a60e55274d81282497?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="mt-20 w-full aspect-[0.87] max-md:mt-10"
+        />
+      </div>
+      <div class="flex flex-col ml-5 w-[70%] max-md:ml-0 max-md:w-full">
+        <div class="relative grow max-md:mt-10 max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/22144c20f80db52d5ce72da9c3978cec90f48e4f12bbddae28441c54b4cdd860?apiKey=5fbe414027e446adac42c844fec3b743&"
+                class="w-full aspect-[0.93] max-md:mt-7"
+              />
+            </div>
+            <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b2047aa74012641f75ea88e251e349d727b4b375f97e7c2f9f6aeb06b5b6cb4?apiKey=5fbe414027e446adac42c844fec3b743&"
+                class="grow mt-20 w-full aspect-[0.91] max-md:mt-10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <div
+      class="flex justify-center gap-0 px-px mt-14 max-w-full text-xs leading-5 text-zinc-950 w-[853px] max-md:flex-wrap max-md:mt-10">
+    <div
+      class="shrink-0 w-14 border-b border-solid border-zinc-950 h-[35px]"></div>
+    <div
+      class="flex gap-5 justify-center px-2 pt-2 pb-2.5 border-b border-solid border-zinc-950 mx-auto">
+      <div>Trader</div>
+      <div class="hidden md:block">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;Weekly Pnl (USD)
+      </div>
+    </div>
+    <div
+      class="justify-center items-start pt-2 pr-16 pb-2.5 pl-5 border-b border-solid border-zinc-950 max-md:pl-2.5 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Weekly ROI
+    </div>
+    <div
+      class="justify-center items-end pt-2 pr-12 pb-2.5 pl-2 whitespace-nowrap border-b border-solid border-zinc-950 hidden md:block">
+      Followers
+    </div>
+    <div
+      class="justify-center items-end pt-2 pr-4 pb-2.5 pl-16 text-right whitespace-nowrap border-b border-solid border-zinc-950 max-md:pl-5 hidden md:block">
+      Action
+    </div>
+  </div>
+
+  <div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+    <div
+      class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="self-center w-6 aspect-[1.27]"
+      />
+      <div>1</div>
+    </div>
+    <div
+      class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+      <div class="flex gap-4 px-px">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 my-auto w-9 aspect-square"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm font-medium leading-5 text-zinc-800">
+            ant****@****
+          </div>
+          <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+            <div class="flex gap-1">
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]"
+                >
+                  2
+                </div>
+                <div class="text-xs leading-5 text-center text-emerald-400">
+                  W
+                </div>
+              </div>
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-slate-400">
+                  M
+                </div>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[2.17] w-[35px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp; +528,013.65
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+      +7.22%
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 329
+    </div>
+    <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+      <div class="gap-0.5 px-16 max-md:px-5">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+      </div>
+    </div>    
+  </div>
+
+  <div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+  <div
+    class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="self-center w-6 aspect-[1.27]"
+    />
+    <div>2</div>
+  </div>
+  <div
+    class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950"
+  >
+    <div class="flex gap-4 px-px">
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="shrink-0 my-auto w-9 aspect-square"
+      />
+      <div class="flex flex-col">
+        <div class="text-sm font-medium leading-5 text-zinc-800">
+          met****@****
+        </div>
+        <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+          <div class="flex gap-1">
+            <div class="flex gap-0 pr-2">
+              <div
+                class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]"
+              >
+                2
+              </div>
+              <div class="text-xs leading-5 text-center text-emerald-400">
+                W
+              </div>
+            </div>
+            <div class="flex gap-0 pr-2">
+              <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7caeabc33058ae747edd90fb2eaab6bf622b0297968fb57589339c89061a8b6?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[3.23] w-[52px]"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +434,288.01
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+    +19.3%
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; 257
+  </div>
+  <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+    <div class="gap-0.5 px-16 max-md:px-5">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+    </div>
+  </div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+<div
+  class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="self-center w-6 aspect-[1.27]"
+  />
+  <div>3</div>
+</div>
+<div
+  class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+  <div class="flex gap-4 px-px">
+    <img
+      loading="lazy"
+      srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="shrink-0 my-auto w-9 aspect-square"
+    />
+    <div class="flex flex-col">
+      <div class="text-sm font-medium leading-5 text-zinc-800">
+        kou****@****
+      </div>
+      <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+        <div class="flex gap-1">
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]"
+            >
+              2
+            </div>
+            <div class="text-xs leading-5 text-center text-emerald-400">
+              W
+            </div>
+          </div>
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]"
+            >
+              1
+            </div>
+            <div class="text-xs leading-5 text-center text-slate-400">
+              M
+            </div>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 aspect-[2.17] w-[35px]"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+&nbsp; &nbsp; &nbsp; &nbsp; +402,242.12
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+  +2.96%
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; 85
+</div>
+<div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+  <div class="gap-0.5 px-16 max-md:px-5">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+  </div>
+</div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+<div
+  class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="self-center w-6 aspect-[1.27]"
+  />
+  <div>4</div>
+</div>
+<div
+  class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+  <div class="flex gap-4 px-px">
+    <img
+      loading="lazy"
+      srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="shrink-0 my-auto w-9 aspect-square"
+    />
+    <div class="flex flex-col">
+      <div class="text-sm font-medium leading-5 text-zinc-800">
+        dubaimoscow
+      </div>
+      <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+        <div class="flex gap-1">
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]"
+            >
+              1
+            </div>
+            <div class="text-xs leading-5 text-center text-emerald-400">
+              W
+            </div>
+          </div>
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]"
+            >
+              1
+            </div>
+            <div class="text-xs leading-5 text-center text-slate-400">
+              M
+            </div>
+          </div>
+        </div>
+        <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/135f0f376add29752c26dfc3a61a86075e5a8864294df51df345c1327e6ed2be?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 self-stretch aspect-[1.05] w-[19px]"
+            />
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+&nbsp; &nbsp; &nbsp; &nbsp; +400,958.52
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+  +15.45%
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; 32
+</div>
+<div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+  <div class="gap-0.5 px-16 max-md:px-5">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+  </div>
+</div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+    <div
+      class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="self-center w-6 aspect-[1.27]"
+      />
+      <div>5</div>
+    </div>
+    <div
+      class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+      <div class="flex gap-4 px-px">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 my-auto w-9 aspect-square"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm font-medium leading-5 text-zinc-800">
+            les****@****
+          </div>
+          <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+            <div class="flex gap-1">
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]"
+                >
+                  2
+                </div>
+                <div class="text-xs leading-5 text-center text-emerald-400">
+                  W
+                </div>
+              </div>
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-slate-400">
+                  M
+                </div>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[2.17] w-[35px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp;  +393,454.82
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+      +18.92%
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 17
+    </div>
+    <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+      <div class="gap-0.5 px-16 max-md:px-5">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+      </div>
+    </div>    
+  </div>
+
+  <div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+  <div
+    class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="self-center w-6 aspect-[1.27]"
+    />
+    <div>6</div>
+  </div>
+  <div
+    class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+    <div class="flex gap-4 px-px">
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="shrink-0 my-auto w-9 aspect-square"
+      />
+      <div class="flex flex-col">
+        <div class="text-sm font-medium leading-5 text-zinc-800">
+          0xBackwards
+        </div>
+        <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+          <div class="flex gap-1">
+            <div class="flex gap-0 pr-2">
+              <div
+                class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+                1
+              </div>
+              <div class="text-xs leading-5 text-center text-emerald-400">
+                W
+              </div>
+            </div>
+            <div class="flex gap-0 pr-2">
+              <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7caeabc33058ae747edd90fb2eaab6bf622b0297968fb57589339c89061a8b6?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[3.23] w-[52px]"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +332,718.72
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+    +40.85%
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; 15
+  </div>
+  <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+    <div class="gap-0.5 px-16 max-md:px-5">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+    </div>
+  </div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+    <div
+      class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="self-center w-6 aspect-[1.27]"
+      />
+      <div>7</div>
+    </div>
+    <div
+      class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+      <div class="flex gap-4 px-px">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 my-auto w-9 aspect-square"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm font-medium leading-5 text-zinc-800">
+            CosmicXBT
+          </div>
+          <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+            <div class="flex gap-1">
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-emerald-400">
+                  W
+                </div>
+              </div>
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-slate-400">
+                  M
+                </div>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[2.17] w-[35px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp; +322,566.34
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"
+    > &nbsp; &nbsp; &nbsp;
+      +9.22%
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 17
+    </div>
+    <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+      <div class="gap-0.5 px-16 max-md:px-5">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+      </div>
+    </div>    
+  </div>
+
+  <div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+    <div
+      class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="self-center w-6 aspect-[1.27]"
+      />
+      <div>8</div>
+    </div>
+    <div
+      class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+      <div class="flex gap-4 px-px">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 my-auto w-9 aspect-square"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm font-medium leading-5 text-zinc-800">
+            seeyouintheob
+          </div>
+          <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+            <div class="flex gap-1">
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+                  2
+                </div>
+                <div class="text-xs leading-5 text-center text-emerald-400">
+                  W
+                </div>
+              </div>
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-slate-400">
+                  M
+                </div>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[2.17] w-[35px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp;  +287,844.02
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+      +8.88%
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 69
+    </div>
+    <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+      <div class="gap-0.5 px-16 max-md:px-5">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+      </div>
+    </div>    
+  </div>
+
+  <div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+  <div
+    class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="self-center w-6 aspect-[1.27]"
+    />
+    <div>9</div>
+  </div>
+  <div
+    class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+    <div class="flex gap-4 px-px">
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="shrink-0 my-auto w-9 aspect-square"
+      />
+      <div class="flex flex-col">
+        <div class="text-sm font-medium leading-5 text-zinc-800">
+          Aleksei
+        </div>
+        <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+          <div class="flex gap-1">
+            <div class="flex gap-0 pr-2">
+              <div
+                class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+                1
+              </div>
+              <div class="text-xs leading-5 text-center text-emerald-400">
+                W
+              </div>
+            </div>
+            <div class="flex gap-0 pr-2">
+              <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7caeabc33058ae747edd90fb2eaab6bf622b0297968fb57589339c89061a8b6?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[3.23] w-[52px]"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +281,582.41
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+    +20.50%
+  </div>
+  <div
+    class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; 10
+  </div>
+  <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+    <div class="gap-0.5 px-16 max-md:px-5">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+    </div>
+  </div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+<div
+  class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="self-center w-6 aspect-[1.27]"
+  />
+  <div>10</div>
+</div>
+<div
+  class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+  <div class="flex gap-4 px-px">
+    <img
+      loading="lazy"
+      srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="shrink-0 my-auto w-9 aspect-square"
+    />
+    <div class="flex flex-col">
+      <div class="text-sm font-medium leading-5 text-zinc-800">
+        hh963
+      </div>
+      <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+        <div class="flex gap-1">
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+              2
+            </div>
+            <div class="text-xs leading-5 text-center text-emerald-400">
+              W
+            </div>
+          </div>
+          <div class="flex gap-0 pr-2">
+            <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7caeabc33058ae747edd90fb2eaab6bf622b0297968fb57589339c89061a8b6?apiKey=5fbe414027e446adac42c844fec3b743&"
+            class="shrink-0 aspect-[3.23] w-[52px]"
+          />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +262,582.41
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+  +7.50%
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; 9
+</div>
+<div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+  <div class="gap-0.5 px-16 max-md:px-5">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+  </div>
+</div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+<div
+  class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="self-center w-6 aspect-[1.27]"
+  />
+  <div>11</div>
+</div>
+<div
+  class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+  <div class="flex gap-4 px-px">
+    <img
+    loading="lazy"
+    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/dab711adc74bc572bd1d2d48eaeb9e3be0a63eed3b94dc3cfe29350385de8f49?apiKey=5fbe414027e446adac42c844fec3b743&"
+    class="shrink-0 my-auto w-9 aspect-square"
+  />
+    <div class="flex flex-col">
+      <div class="text-sm font-medium leading-5 text-zinc-800">
+        mhy****@****
+      </div>
+      <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+        <div class="flex gap-1">
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#33B88C_0.11%,#96FAD9_31.51%,#3BA380_65.84%,#33B88C_99.79%)]">
+              2
+            </div>
+            <div class="text-xs leading-5 text-center text-emerald-400">
+              W
+            </div>
+          </div>
+          <div class="flex gap-0 pr-2">
+            <div
+              class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+              1
+            </div>
+            <div class="text-xs leading-5 text-center text-slate-400">
+              M
+            </div>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 aspect-[2.17] w-[35px]"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+&nbsp; &nbsp; &nbsp; &nbsp;  +240,814.62
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+  +14.14%
+</div>
+<div
+  class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; 12
+</div>
+<div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+  <div class="gap-0.5 px-16 max-md:px-5">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+  </div>
+</div>    
+</div>
+
+<div class="flex z-10 gap-0 px-px max-w-full whitespace-nowrap w-[853px] mx-auto">
+    <div
+      class="flex flex-col px-4 py-6 text-xs font-semibold leading-5 text-center border-b border-solid border-zinc-950 text-zinc-800">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e39bd3876ad061293be1067e21bc232a4ce74b6e675c93173414a6120255cc6?apiKey=5fbe414027e446adac42c844fec3b743&"
+        class="self-center w-6 aspect-[1.27]"
+      />
+      <div>12</div>
+    </div>
+    <div
+      class="flex flex-col px-2 pt-4 pb-4 border-b border-solid border-zinc-950">
+      <div class="flex gap-4 px-px">
+        <img
+          loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f61f1344083744aba2c51f4403de348f99da053c22f760dc73db03aa049128e9?apiKey=5fbe414027e446adac42c844fec3b743&"
+          class="shrink-0 my-auto w-9 aspect-square"
+        />
+        <div class="flex flex-col">
+          <div class="text-sm font-medium leading-5 text-zinc-800">
+            nomooddakk
+          </div>
+          <div class="flex gap-2 px-0.5 py-px mt-1 font-semibold">
+            <div class="flex gap-1">
+              <div class="flex gap-0 pr-2">
+                <div
+                  class="text-base italic leading-4 bg-clip-text bg-[linear-gradient(90deg,#96B8DA_0.11%,#E4F0FC_33.34%,#6E98C1_66.03%,#95B8DB_99.79%)]">
+                  1
+                </div>
+                <div class="text-xs leading-5 text-center text-slate-400">
+                  W
+                </div>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d35ace610ecd7ab47f2d5ae3402421ca9c699ae1be26095317d469abac25b1?apiKey=5fbe414027e446adac42c844fec3b743&"
+              class="shrink-0 aspect-[2.17] w-[35px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="justify-center items-start px-16 py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 max-md:pr-5 max-md:pl-6 hidden md:block">
+    &nbsp; &nbsp; &nbsp; &nbsp;  +200,893.32
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 text-green-500 border-b border-solid border-zinc-950 hidden md:block"> &nbsp; &nbsp; &nbsp;
+      +263.89%
+    </div>
+    <div
+      class="justify-center py-7 text-sm font-medium leading-5 border-b border-solid border-zinc-950 text-zinc-800 hidden md:block">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 10
+    </div>
+    <div class="flex flex-col justify-center px-2 py-7 text-sm font-medium leading-5 text-right border-b border-solid border-zinc-950 hidden md:block" style="color: #F0BA19;">
+      <div class="gap-0.5 px-16 max-md:px-5">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Follow
+      </div>
+    </div>    
+  </div>
+
+
+<div class="flex justify-center items-center px-16 py-2.5 mt-10 text-sm font-semibold leading-5 text-white rounded border border-solid bg-black border-zinc-800 max-md:px-5 max-md:max-w-full">
+  <div class="flex gap-1">
+    <div>View More</div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a1c58fda23300f52b5b754bf79bfbf537192eb2d3f954ea4649692788b114e2?apiKey=5fbe414027e446adac42c844fec3b743&"
+      class="shrink-0 my-auto w-4 aspect-square"
+    />
+  </div>
+</div>
+
+
+</body>
+</html>
